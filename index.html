@@ -16,28 +16,50 @@
     <title>Frontend Mentor | Blog preview card</title>
   </head>
   <body>
-    <div class="card">
-      <img
-        src="assets/images/illustration-article.svg"
-        alt="article illustration"
-      />
-      <div class="tag">Learning</div>
-      <div class="dateline">Published 21 Dec 2023</div>
-      <div class="card-header h1">HTML & CSS foundations</div>
-      <div class="card-body">
-        <p class="card-body-text">
-          These languages are the backbone of every website, defining structure,
-          content, and presentation.
-        </p>
+    <main>
+      <div class="card">
+        <div class="card-content">
+          <div class="card-image">
+            <img
+              src="assets/images/illustration-article.svg"
+              height="200"
+              width="335"
+              alt="article illustration"
+            />
+          </div>
+          <div class="card-body">
+            <p class="tag">Learning</p>
+            <p class="dateline">Published 21 Dec 2023</p>
+            <p class="card-header">HTML & CSS foundations</p>
+            <div class="card-body">
+              <p class="card-body-text">
+                These languages are the backbone of every website, defining
+                structure, content, and presentation.
+              </p>
+            </div>
+            <div class="author-tagline">
+              <img
+                src="assets/images/image-avatar.webp"
+                alt="author image"
+                width="32"
+                height="32"
+                class="author-tagline-image"
+              />
+              <p class="author-tagline-text">Greg Hooper</p>
+            </div>
+          </div>
+        </div>
       </div>
-      <div class="author-tagline">Greg Hooper</div>
-    </div>
+    </main>
 
-    <div class="attribution">
-      Challenge by
-      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
-        >Frontend Mentor</a
-      >. Coded by <a href="#">Your Name Here</a>.
-    </div>
+    <footer>
+      <div class="attribution">
+        Challenge by
+        <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">
+          Frontend Mentor.
+        </a>
+        Coded by <a href="#">reznaeous</a>.
+      </div>
+    </footer>
   </body>
 </html>

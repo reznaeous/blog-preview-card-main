@@ -1,10 +1,17 @@
+@font-face {
+  font-family: "Figtree";
+  src: url(assets/fonts/Figtree-VariableFont_wght.ttf);
+}
+
 :root {
   --clr-yellow: hsl(47, 88%, 63%);
-  --clr-white: hsl(-, 0%, 100%);
+  --clr-white: hsl(0, 0%, 100%);
   --clr-gray-500: hsl(0, 0%, 42%);
   --clr-gray-950: hsl(0, 0%, 7%);
   --box-shadow: 8px 8px 0px 0px #000000;
   --card-border-radius: 1.25rem;
+  --fw-medium: 500;
+  --fw-extra-bold: 800;
 }
 
 *,
@@ -22,17 +29,84 @@ video {
 }
 
 body {
+  font-family: "Figtree", sans-serif;
+  font-weight: 500;
   background-color: var(--clr-yellow);
+  line-height: 150%;
+  color: var(--clr-gray-950);
+  font-size: clamp(0.88rem, 0.75rem + 0.44vw, 1rem);
 }
 
 .card {
+  max-width: 25rem;
   box-shadow: var(--box-shadow);
   border-radius: var(--card-border-radius);
   background-color: var(--clr-white);
+  margin: 3rem auto;
+  padding: 1.5rem;
+}
+
+.card-content {
+  margin-inline: auto;
+  display: grid;
+  /* flex-direction: column; */
+  gap: 1rem;
+}
+
+/* .card-body > p {
+  margin: 0;
+  padding: 0;
+}
+
+.card-body {
+} */
+
+img {
+  border-radius: var(--card-border-radius);
+  object-fit: cover;
+}
+
+.card-header {
+  font-weight: var(--fw-extra-bold);
+  font-size: 1.5rem;
+  /* display: inline-block; */
+}
+
+.card-header:hover {
+  color: var(--clr-yellow);
+}
+
+.card-body-text {
+  color: var(--clr-gray-500);
 }
 
 .tag {
   background-color: var(--clr-yellow);
+  display: inline;
+  font-weight: var(--fw-extra-bold);
+  padding: 0.5em 0.75em;
+  /* border-radius: calc(var(--card-border-radius) / 3); */
+  border-radius: 0.3em;
+}
+
+.author-tagline {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.author-tagline > p {
+  font-weight: var(--fw-extra-bold);
+}
+
+/* .author-tagline::before {
+  content: url(assets/images/image-avatar.webp);
+  height: 2rem;
+  width: 2rem;
+} */
+
+footer {
+  margin-block-start: 4rem;
 }
 
 .attribution {
@@ -42,4 +116,12 @@ body {
 
 .attribution a {
   color: hsl(228, 45%, 44%);
+}
+
+.fw-medium {
+  font-weight: var(--fw-medium);
+}
+
+.fw-extra-bold {
+  font-weight: var(--fw-extra-bold);
 }
