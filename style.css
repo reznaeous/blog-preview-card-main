@@ -9,6 +9,7 @@
   --clr-gray-500: hsl(0, 0%, 42%);
   --clr-gray-950: hsl(0, 0%, 7%);
   --box-shadow: 8px 8px 0px 0px #000000;
+  --card-border: 1px solid black;
   --card-border-radius: 1.25rem;
   --fw-medium: 500;
   --fw-extra-bold: 800;
@@ -45,6 +46,7 @@ body {
   max-width: 24rem;
   box-shadow: var(--box-shadow);
   border-radius: var(--card-border-radius);
+  border: var(--card-border);
   background-color: var(--clr-white);
   margin: 3rem auto;
   margin-top: 13.6875rem;
