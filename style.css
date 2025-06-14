@@ -14,6 +14,7 @@
   --fw-extra-bold: 800;
 }
 
+/* Reset a few bits */
 *,
 *::after,
 *::before {
@@ -28,38 +29,44 @@ video {
   max-width: 100%;
 }
 
+/* Start the rules */
 body {
   font-family: "Figtree", sans-serif;
-  font-weight: 500;
+  font-weight: var(--fw-medium);
   background-color: var(--clr-yellow);
   line-height: 150%;
   color: var(--clr-gray-950);
+  /* Smallest at 450px, largest at 900px */
   font-size: clamp(0.88rem, 0.75rem + 0.44vw, 1rem);
+  padding-inline: 1rem;
 }
 
 .card {
-  max-width: 25rem;
+  max-width: 24rem;
   box-shadow: var(--box-shadow);
   border-radius: var(--card-border-radius);
   background-color: var(--clr-white);
   margin: 3rem auto;
+  margin-top: 10rem;
   padding: 1.5rem;
 }
 
 .card-content {
-  margin-inline: auto;
+  margin: 0 auto;
   display: grid;
   gap: 1rem;
 }
 
 img {
-  border-radius: var(--card-border-radius);
+  border-radius: 0.625rem;
   object-fit: cover;
 }
 
 .card-header {
   font-weight: var(--fw-extra-bold);
-  font-size: 1.5rem;
+  /* Smallest at 450px, largest at 900px */
+  font-size: clamp(1.25rem, 1rem + 0.89vw, 1.5rem);
+  margin-block: 0.5em;
 }
 
 .card-header:hover {
@@ -68,6 +75,7 @@ img {
 
 .card-body-text {
   color: var(--clr-gray-500);
+  margin-block-end: 1.5rem;
 }
 
 .tag {
@@ -85,6 +93,10 @@ img {
 }
 
 .author-tagline > p {
+  margin-block: 0;
+}
+
+.author-tagline > p {
   font-weight: var(--fw-extra-bold);
 }
 
@@ -99,12 +111,4 @@ footer {
 
 .attribution a {
   color: hsl(228, 45%, 44%);
-}
-
-.fw-medium {
-  font-weight: var(--fw-medium);
-}
-
-.fw-extra-bold {
-  font-weight: var(--fw-extra-bold);
 }
