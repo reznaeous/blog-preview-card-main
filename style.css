@@ -49,17 +49,8 @@ body {
 .card-content {
   margin-inline: auto;
   display: grid;
-  /* flex-direction: column; */
   gap: 1rem;
 }
-
-/* .card-body > p {
-  margin: 0;
-  padding: 0;
-}
-
-.card-body {
-} */
 
 img {
   border-radius: var(--card-border-radius);
@@ -69,7 +60,6 @@ img {
 .card-header {
   font-weight: var(--fw-extra-bold);
   font-size: 1.5rem;
-  /* display: inline-block; */
 }
 
 .card-header:hover {
@@ -85,7 +75,6 @@ img {
   display: inline;
   font-weight: var(--fw-extra-bold);
   padding: 0.5em 0.75em;
-  /* border-radius: calc(var(--card-border-radius) / 3); */
   border-radius: 0.3em;
 }
 
@@ -98,12 +87,6 @@ img {
 .author-tagline > p {
   font-weight: var(--fw-extra-bold);
 }
-
-/* .author-tagline::before {
-  content: url(assets/images/image-avatar.webp);
-  height: 2rem;
-  width: 2rem;
-} */
 
 footer {
   margin-block-start: 4rem;
